@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günün Şansı - Bonusunu Al!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX'); // Google Analytics kodun varsa buraya
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.95);}
+            to {opacity: 1; transform: scale(1);}
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #00ffcc;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background: #00ffcc;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-button:hover {
+            background: #00e6b8;
+        }
+        .bonus-list {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .bonus-list li {
+            margin-bottom: 10px;
+        }
+        .lang-switch {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content-tr">
+        <h1>Bugün Şans Sende!</h1>
+        <p>%50 Yatırım Bonusu, Çevrimsiz Kazançlar, Kayıp Bonusu ve çok daha fazlası seni bekliyor.</p>
+        <ul class="bonus-list">
+            <li>✅ %50 İlk Yatırım Bonusu</li>
+            <li>✅ Çevrimsiz Spor Bonusu</li>
+            <li>✅ %40 Gece Slot Kayıp Bonusu</li>
+            <li>✅ Haftalık %10 Kayıp Bonusu</li>
+        </ul>
+        <a class="cta-button" href="https://tinyurl.com/wgpaff?t=ZGQ3MGE0" target="_blank">Hemen Katıl & Bonusunu Al</a>
+        <div class="lang-switch" onclick="toggleLanguage()">View in English</div>
+    </div>
+
+    <div class="container" id="content-en" style="display: none;">
+        <h1>Your Lucky Day Starts Now!</h1>
+        <p>50% Welcome Bonus, No-Rollover Sports Deals, Cashback Offers and much more await you!</p>
+        <ul class="bonus-list">
+            <li>✅ 50% First Deposit Bonus</li>
+            <li>✅ No-Rollover Sports Bonus</li>
+            <li>✅ 40% Late Night Slot Cashback</li>
+            <li>✅ Weekly 10% Loss Cashback</li>
+        </ul>
+        <a class="cta-button" href="https://tinyurl.com/wgpaff?t=ZGQ3MGE0" target="_blank">Join Now & Claim Bonus</a>
+        <div class="lang-switch" onclick="toggleLanguage()">Türkçe Görüntüle</div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const tr = document.getElementById("content-tr");
+            const en = document.getElementById("content-en");
+            if (tr.style.display === "none") {
+                tr.style.display = "block";
+                en.style.display = "none";
+            } else {
+                tr.style.display = "none";
+                en.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
